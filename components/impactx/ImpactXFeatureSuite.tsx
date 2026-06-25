@@ -26,7 +26,7 @@ export default function ImpactXFeatureSuite() {
   const { ref, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-off-white">
+    <section ref={ref} className="py-12 md:py-24 bg-off-white">
       <div className="max-w-container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ export default function ImpactXFeatureSuite() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+          <h2 className="text-[28px] md:text-[36px] font-bold text-gray-900 tracking-[-0.02em] leading-[1.2]">
             What You Get with ImpactX
           </h2>
         </motion.div>
@@ -61,8 +61,10 @@ export default function ImpactXFeatureSuite() {
                   <div className="w-12 h-12 rounded-lg bg-gold-primary/20 flex items-center justify-center">
                     <Icon className="h-6 w-6 text-gold-primary" />
                   </div>
-                  <h3 className="text-xl font-bold text-white">{feat.title}</h3>
-                  <p className="text-sm text-gray-300 leading-relaxed">{feat.desc}</p>
+                  {/* Feature card title — spec: text-xl = 28px, weight-700 */}
+                  <h3 className="text-[21px] font-bold text-white">{feat.title}</h3>
+                  {/* Feature desc — spec: text-base = 15px */}
+                  <p className="text-[15px] text-gray-300 leading-[1.6]">{feat.desc}</p>
                   <div className="flex flex-wrap gap-2 pt-2">
                     {feat.outputs.map(o => (
                       <span key={o} className="px-3 py-1 bg-white/10 text-gray-200 text-xs rounded-full">{o}</span>

@@ -41,19 +41,19 @@ export default function CorePillarsSection() {
   const { ref, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-white">
+    <section ref={ref} className="py-12 md:py-24 bg-white">
       <div className="max-w-container mx-auto px-6">
-        {/* Section Header */}
+        {/* Section Header — spec: mb 48px mobile / 64px desktop */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-4">
+          <h2 className="text-[28px] md:text-[36px] font-bold text-gray-900 tracking-[-0.02em] leading-[1.2] mb-4">
             Engineered for Brands that Demand Measurable ROI
           </h2>
-          <p className="text-md text-gray-700">
+          <p className="text-[17px] text-gray-700">
             Our three-pillar methodology transforms digital marketing from expense to investment
           </p>
         </motion.div>
@@ -100,13 +100,13 @@ export default function CorePillarsSection() {
                       <Icon className="h-7 w-7 text-navy-primary" />
                     </div>
 
-                    {/* Title */}
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 leading-tight">
+                    {/* Title — spec: text-xl = 28px, weight-700, navy */}
+                    <h3 className="text-[18px] font-bold text-gray-900 leading-tight">
                       {pillar.title}
                     </h3>
 
-                    {/* Description */}
-                    <p className="text-base text-gray-700 leading-relaxed">
+                    {/* Description — spec: text-base = 15px */}
+                    <p className="text-[15px] text-gray-700 leading-[1.6]">
                       {pillar.description}
                     </p>
                   </div>

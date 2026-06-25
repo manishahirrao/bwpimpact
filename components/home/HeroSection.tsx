@@ -19,8 +19,8 @@ import {
  */
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center pt-16 bg-white">
-      <div className="max-w-container mx-auto px-6 w-full">
+    <section className="relative min-h-screen flex items-center bg-white" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
+      <div className="max-w-container mx-auto px-6 w-full pt-16 lg:pt-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-6 lg:space-y-8">
@@ -41,7 +41,7 @@ export default function HeroSection() {
               variants={heroHeadline}
               initial="hidden"
               animate="visible"
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight leading-tight"
+              className="text-[40px] md:text-[56px] lg:text-[64px] font-extrabold text-gray-900 tracking-[-0.04em] leading-[1.0]"
             >
               Your 'Zero to Hero' Digital Growth Partner.
             </motion.h1>
@@ -51,7 +51,7 @@ export default function HeroSection() {
               variants={heroSubheadline}
               initial="hidden"
               animate="visible"
-              className="text-md md:text-lg text-gray-700 leading-relaxed max-w-xl"
+              className="text-[17px] text-gray-700 leading-relaxed max-w-xl"
             >
               We don't chase vanity metrics. At BWP Impact, we engineer 
               high-converting social media ecosystems, high-yield lead generation 
@@ -63,7 +63,7 @@ export default function HeroSection() {
               variants={heroSubheadline}
               initial="hidden"
               animate="visible"
-              className="text-base text-gray-600"
+              className="text-[15px] text-gray-600"
             >
               Built on the trusted 8+ year legacy of{' '}
               <span className="italic text-navy-primary">Branding with Priyam</span>.

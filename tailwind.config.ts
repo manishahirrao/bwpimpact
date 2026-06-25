@@ -58,6 +58,7 @@ const config: Config = {
         "xl":   "0 20px 40px rgba(0,0,0,0.10), 0 8px 20px rgba(0,0,0,0.05)",
         "card": "0 2px 8px rgba(27,43,107,0.08), 0 1px 3px rgba(27,43,107,0.04)",
         "gold": "0 4px 20px rgba(201,168,68,0.30)",
+        "nav":  "0 1px 0 rgba(0,0,0,0.06)",
       },
       maxWidth: {
         container: "1200px",

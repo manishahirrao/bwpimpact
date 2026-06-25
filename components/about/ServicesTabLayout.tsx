@@ -55,7 +55,7 @@ export default function ServicesTabLayout() {
   const active = tabs.find(t => t.id === activeTab)!;
 
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-off-white relative">
+    <section ref={ref} className="py-12 md:py-24 bg-off-white relative">
       {/* Subtle dot pattern */}
       <div
         className="absolute inset-0 opacity-30 pointer-events-none"
@@ -72,10 +72,10 @@ export default function ServicesTabLayout() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+          <h2 className="text-[28px] md:text-[36px] font-bold text-gray-900 tracking-[-0.02em] leading-[1.2]">
             The Comprehensive Service Ecosystem
           </h2>
-          <p className="text-md text-gray-700 mt-3 max-w-2xl mx-auto">
+          <p className="text-[17px] text-gray-700 mt-3 max-w-2xl mx-auto">
             Four integrated verticals, one unified growth strategy.
           </p>
         </motion.div>
@@ -127,8 +127,10 @@ export default function ServicesTabLayout() {
                       <active.icon className="h-5 w-5 text-navy-primary" />
                     </div>
                     <div>
-                      <h4 className="text-md font-semibold text-gray-900 mb-1">{svc.title}</h4>
-                      <p className="text-sm text-gray-700 leading-relaxed">{svc.desc}</p>
+                      {/* Service title — spec: 17px, weight-600 */}
+                      <h4 className="text-[17px] font-semibold text-gray-900 mb-1">{svc.title}</h4>
+                      {/* Service desc — spec: 15px, weight-400 */}
+                      <p className="text-[15px] text-gray-700 leading-[1.6]">{svc.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -167,8 +169,8 @@ export default function ServicesTabLayout() {
                       <div className="px-5 pb-5 space-y-4 border-t border-gray-100 pt-4">
                         {tab.services.map(svc => (
                           <div key={svc.title}>
-                            <h4 className="text-sm font-semibold text-navy-primary mb-1">{svc.title}</h4>
-                            <p className="text-sm text-gray-700 leading-relaxed">{svc.desc}</p>
+                            <h4 className="text-[15px] font-semibold text-navy-primary mb-1">{svc.title}</h4>
+                            <p className="text-[15px] text-gray-700 leading-[1.6]">{svc.desc}</p>
                           </div>
                         ))}
                       </div>

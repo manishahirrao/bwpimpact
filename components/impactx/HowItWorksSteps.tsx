@@ -30,7 +30,7 @@ export default function HowItWorksSteps() {
   const { ref, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-off-white">
+    <section ref={ref} className="py-12 md:py-24 bg-off-white">
       <div className="max-w-container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,10 +38,10 @@ export default function HowItWorksSteps() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+          <h2 className="text-[28px] md:text-[36px] font-bold text-gray-900 tracking-[-0.02em] leading-[1.2]">
             How It Works
           </h2>
-          <p className="text-md text-gray-700 mt-3">Three steps. Infinite impact.</p>
+          <p className="text-[17px] text-gray-700 mt-3">Three steps. Infinite impact.</p>
         </motion.div>
 
         {/* Desktop: Horizontal timeline */}
@@ -68,8 +68,10 @@ export default function HowItWorksSteps() {
                 <div className="w-10 h-10 rounded-md bg-navy-light mb-3 flex items-center justify-center">
                   <Icon className="h-5 w-5 text-navy-primary" />
                 </div>
-                <h3 className="text-lg font-bold text-navy-primary mb-2 max-w-[200px]">{step.title}</h3>
-                <p className="text-sm text-gray-700 leading-relaxed max-w-[240px]">{step.desc}</p>
+                {/* Step title — spec: 20px, weight-700, navy */}
+                <h3 className="text-[20px] font-bold text-navy-primary mb-2 max-w-[200px]">{step.title}</h3>
+                {/* Step desc — spec: 15px, gray-700, line-height 1.7 */}
+                <p className="text-[15px] text-gray-700 leading-[1.7] max-w-[240px]">{step.desc}</p>
               </motion.div>
             );
           })}
@@ -98,8 +100,9 @@ export default function HowItWorksSteps() {
                   <div className="inline-flex items-center justify-center w-10 h-10 rounded-md bg-navy-light mb-2">
                     <Icon className="h-5 w-5 text-navy-primary" />
                   </div>
-                  <h3 className="text-lg font-bold text-navy-primary mb-1">{step.title}</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed">{step.desc}</p>
+                  {/* Mobile step title */}
+                  <h3 className="text-[20px] font-bold text-navy-primary mb-1">{step.title}</h3>
+                  <p className="text-[15px] text-gray-700 leading-[1.7]">{step.desc}</p>
                 </div>
               </motion.div>
             );

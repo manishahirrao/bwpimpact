@@ -20,7 +20,7 @@ export default function NicheExpertiseGrid() {
   const { ref, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-white">
+    <section ref={ref} className="py-12 md:py-24 bg-white">
       <div className="max-w-container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,10 +28,10 @@ export default function NicheExpertiseGrid() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+          <h2 className="text-[28px] md:text-[36px] font-bold text-gray-900 tracking-[-0.02em] leading-[1.2]">
             Your Industry. Our Expertise.
           </h2>
-          <p className="text-md text-gray-700 mt-3 max-w-2xl mx-auto">
+          <p className="text-[17px] text-gray-700 mt-3 max-w-2xl mx-auto">
             We've built deep playbooks for 6 key industries — so you get strategy that works, not experiments at your expense.
           </p>
         </motion.div>
@@ -56,10 +56,12 @@ export default function NicheExpertiseGrid() {
                     <Icon className="h-6 w-6 text-navy-primary group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h3 className="text-md font-semibold text-gray-900 group-hover:text-white transition-colors mb-1">
+                    {/* Tile title — spec: 17px, weight-600 */}
+                    <h3 className="text-[17px] font-semibold text-gray-900 group-hover:text-white transition-colors mb-1">
                       {niche.title}
                     </h3>
-                    <p className="text-sm text-gray-600 group-hover:text-gray-300 transition-colors leading-relaxed">
+                    {/* Tile desc — spec: 15px */}
+                    <p className="text-[15px] text-gray-600 group-hover:text-gray-300 transition-colors leading-[1.6]">
                       {niche.desc}
                     </p>
                   </div>

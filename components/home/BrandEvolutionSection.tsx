@@ -14,7 +14,7 @@ export default function BrandEvolutionSection() {
   return (
     <section
       ref={ref}
-      className="py-16 md:py-24 bg-off-white"
+      className="py-12 md:py-24 bg-off-white"
     >
       <div className="max-w-container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center">
@@ -24,7 +24,7 @@ export default function BrandEvolutionSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
-              className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight"
+              className="text-[28px] md:text-[36px] font-bold text-gray-900 tracking-[-0.02em] leading-[1.2]"
             >
               Same Legacy. Disruptive Upgrades.
             </motion.h2>
@@ -33,7 +33,7 @@ export default function BrandEvolutionSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="space-y-4 text-base text-gray-700 leading-relaxed"
+              className="space-y-4 text-[15px] text-gray-700 leading-[1.6]"
             >
               <p>
                 For over 8 years, <span className="italic text-navy-primary">Branding with Priyam</span> has 

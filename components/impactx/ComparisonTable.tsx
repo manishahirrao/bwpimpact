@@ -35,7 +35,7 @@ export default function ComparisonTable() {
   const { ref, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-white">
+    <section ref={ref} className="py-12 md:py-24 bg-white">
       <div className="max-w-container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,10 +43,10 @@ export default function ComparisonTable() {
           transition={{ duration: 0.6 }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+          <h2 className="text-[28px] md:text-[36px] font-bold text-gray-900 tracking-[-0.02em] leading-[1.2]">
             Traditional vs. ImpactX
           </h2>
-          <p className="text-md text-gray-700 mt-3">The numbers don&apos;t lie.</p>
+          <p className="text-[17px] text-gray-700 mt-3">The numbers don&apos;t lie.</p>
         </motion.div>
 
         <motion.div
@@ -78,11 +78,13 @@ export default function ComparisonTable() {
                   >
                     {row.feature}
                   </td>
-                  <td className="px-6 py-5 text-sm text-gray-400 leading-relaxed border-r border-gray-200">
+                  {/* Traditional column — spec: 14px, gray-400 (muted) */}
+                  <td className="px-6 py-5 text-[14px] text-gray-400 leading-relaxed border-r border-gray-200">
                     {row.traditional}
                   </td>
+                  {/* ImpactX column — spec: 14px, navy-primary, weight-500 */}
                   <td
-                    className="px-6 py-5 text-sm text-navy-primary font-medium leading-relaxed border-l-[3px] border-gold-primary"
+                    className="px-6 py-5 text-[14px] text-navy-primary font-medium leading-relaxed border-l-[3px] border-gold-primary"
                     style={{ background: 'rgba(201,168,68,0.04)' }}
                   >
                     <span className="text-gold-primary mr-1">✦</span>

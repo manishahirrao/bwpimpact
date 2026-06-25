@@ -46,7 +46,7 @@ export default function LeadCaptureBanner() {
     <>
       <section
         ref={ref}
-        className="relative py-16 md:py-20 overflow-hidden bg-gradient-to-br from-[#0D1B4B] via-navy-primary to-[#1B2B6B]"
+        className="relative py-12 md:py-20 overflow-hidden bg-gradient-to-br from-[#0D1B4B] via-navy-primary to-[#1B2B6B]"
       >
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-gold-primary/5 rounded-full blur-3xl" />
@@ -59,14 +59,14 @@ export default function LeadCaptureBanner() {
             transition={{ duration: 0.7 }}
             className="text-center space-y-6 max-w-3xl mx-auto"
           >
-            {/* Headline */}
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight">
+            {/* Headline — spec: section H2 = 36px desktop */}
+            <h2 className="text-[28px] md:text-[36px] lg:text-[48px] font-bold text-white tracking-[-0.02em] leading-[1.2]">
               Is your current digital marketing draining your cash flow without 
               delivering results?
             </h2>
 
-            {/* Subtext */}
-            <p className="text-md md:text-lg text-gray-300 leading-relaxed">
+            {/* Subtext — spec: text-md = 17px */}
+            <p className="text-[17px] text-gray-300 leading-relaxed">
               Stop guessing. Let our growth specialists run an exhaustive, data-backed 
               audit of your social presence and current ad funnels—completely free.
             </p>

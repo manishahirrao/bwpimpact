@@ -36,41 +36,41 @@ export default function ImpactXHero() {
 
   return (
     <>
-      <section className="relative min-h-screen flex items-center pt-16 bg-navy-deep overflow-hidden">
+      <section className="relative min-h-screen flex items-center bg-navy-deep overflow-hidden" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
         {/* Ambient glow */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-primary/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-navy-medium/30 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative max-w-container mx-auto px-6 w-full">
+        <div className="relative max-w-container mx-auto px-6 w-full pt-16 lg:pt-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left — Text */}
             <div className="space-y-6">
-              {/* Gold italic tagline */}
+              {/* Gold italic tagline — spec: font-accent italic, gold */}
               <motion.p
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="font-accent italic text-gold-primary text-lg md:text-xl"
+                className="font-accent italic text-gold-primary text-[21px] md:text-[28px]"
               >
                 AI podcasts that turn brand stories into measurable impact.
               </motion.p>
 
-              {/* Main headline */}
+              {/* Main headline — spec: text-3xl (48px) desktop */}
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight"
+                className="text-[32px] md:text-[40px] lg:text-[48px] font-bold text-white tracking-[-0.03em] leading-[1.1]"
               >
                 Your Always-On, Fully Automated Industry Authority Engine.
               </motion.h1>
 
-              {/* Philosophy text */}
+              {/* Philosophy text — spec: text-md = 17px */}
               <motion.p
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.35 }}
-                className="text-md text-gray-300 leading-relaxed"
+                className="text-[17px] text-gray-300 leading-relaxed"
               >
                 ImpactX is not a podcast studio. It&apos;s an AI-powered brand authority system
                 that deploys your exclusive digital avatar as a permanent, always-on industry

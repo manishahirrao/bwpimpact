@@ -24,12 +24,14 @@ export default function ImpactXClosingCTA() {
           transition={{ duration: 0.7 }}
           className="space-y-6 max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight">
+          {/* Closing headline — spec: text-3xl (48px) desktop */}
+          <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-bold text-white tracking-[-0.03em] leading-[1.1]">
             Let Your Avatar Do the Talking.{' '}
             <span className="text-gold-primary">Let Your Brand Scale the Impact.</span>
           </h2>
 
-          <p className="text-md text-gray-300 leading-relaxed">
+          {/* Subtext — spec: text-md = 17px */}
+          <p className="text-[17px] text-gray-300 leading-relaxed">
             Join forward-thinking businesses changing how market authority is established.
           </p>
 

@@ -24,14 +24,14 @@ export default function AboutLeadershipSection() {
   const { ref, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-white">
+    <section ref={ref} className="py-12 md:py-24 bg-white">
       <div className="max-w-container mx-auto px-6">
         {/* Section Title */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight text-center mb-12 md:mb-16"
+          className="text-[28px] md:text-[36px] font-bold text-gray-900 tracking-[-0.02em] leading-[1.2] text-center mb-12 md:mb-16"
         >
           Bridging Corporate Strategy with Ground-Level Business Realities.
         </motion.h2>
@@ -70,11 +70,13 @@ export default function AboutLeadershipSection() {
             className="space-y-6"
           >
             <div>
-              <h3 className="text-xl font-bold text-navy-primary mb-1">Priyam Talpade Mandrekar</h3>
-              <p className="text-sm text-gray-500">Founder & Chief Strategist, BWP IMPACT</p>
+              {/* Name — spec: text-lg (21px), weight-700 */}
+              <h3 className="text-[21px] font-bold text-navy-primary mb-1">Priyam Talpade Mandrekar</h3>
+              {/* Role — spec: text-sm (13px) */}
+              <p className="text-[13px] text-gray-500">Founder & Chief Strategist, BWP IMPACT</p>
             </div>
 
-            <div className="space-y-3 text-base text-gray-700 leading-relaxed">
+            <div className="space-y-3 text-[15px] text-gray-700 leading-[1.6]">
               <p>
                 With a <strong>PGDM in Marketing Management</strong> and a background in{' '}
                 <strong>Nielsen market research consulting</strong>, Priyam brings the rigor of
@@ -108,7 +110,8 @@ export default function AboutLeadershipSection() {
 
             {/* Core Values Accordion */}
             <div className="pt-4">
-              <h4 className="text-base font-semibold text-gray-900 mb-3">Our Core Values</h4>
+              {/* Core Values heading — spec: text-base (15px), weight-600 */}
+              <h4 className="text-[15px] font-semibold text-gray-900 mb-3">Our Core Values</h4>
               <div className="space-y-2">
                 {coreValues.map((val, i) => (
                   <div key={val.title} className="border border-gray-200 rounded-lg overflow-hidden">
@@ -117,7 +120,8 @@ export default function AboutLeadershipSection() {
                       className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-100 transition-colors"
                       aria-expanded={openIndex === i}
                     >
-                      <span className="text-base font-medium text-gray-900">{val.title}</span>
+                      {/* Accordion trigger — spec: text-base = 15px, weight-500 */}
+                      <span className="text-[15px] font-medium text-gray-900">{val.title}</span>
                       <ChevronDown
                         className={`h-4 w-4 text-gray-500 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}
                       />
@@ -131,7 +135,7 @@ export default function AboutLeadershipSection() {
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.2 }}
                         >
-                          <p className="px-4 pb-4 text-sm text-gray-700 leading-relaxed">{val.desc}</p>
+                          <p className="px-4 pb-4 text-[15px] text-gray-700 leading-[1.6]">{val.desc}</p>
                         </motion.div>
                       )}
                     </AnimatePresence>

@@ -61,10 +61,11 @@ export default function GlobalNav() {
           <div className="flex items-center justify-between h-full">
             {/* Logo */}
             <Link href="/" className="flex flex-col">
-              <div className="text-xl md:text-2xl font-bold text-navy-primary">
+              {/* Logo text — spec: 140px wide logo, sub-tagline 11px italic gray */}
+              <div className="text-[22px] font-bold text-navy-primary tracking-tight">
                 BWP IMPACT
               </div>
-              <div className="hidden md:block text-[11px] italic text-gray-400 font-light -mt-1">
+              <div className="hidden md:block text-[11px] italic text-gray-400 font-light leading-tight">
                 The Next Evolution of Branding with Priyam
               </div>
             </Link>
@@ -152,8 +153,10 @@ export default function GlobalNav() {
             >
               {/* Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                <div className="text-xl font-bold text-navy-primary">
-                  BWP IMPACT
+                {/* Mobile overlay logo — spec: full logo with sub-tagline */}
+                <div>
+                  <div className="text-[22px] font-bold text-navy-primary tracking-tight">BWP IMPACT</div>
+                  <div className="text-[11px] italic text-gray-400 font-light">The Next Evolution of Branding with Priyam</div>
                 </div>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -164,7 +167,7 @@ export default function GlobalNav() {
                 </button>
               </div>
 
-              {/* Links */}
+              {/* Links — spec: 24px weight-600 in overlay */}
               <div className="flex flex-col p-6 gap-6">
                 {navLinks.map((link) => {
                   const isActive = pathname === link.href;
@@ -174,7 +177,7 @@ export default function GlobalNav() {
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={cn(
-                        'text-2xl font-semibold transition-colors',
+                        'text-[24px] font-semibold transition-colors',
                         isActive
                           ? 'text-navy-primary'
                           : 'text-gray-700 hover:text-navy-primary'
