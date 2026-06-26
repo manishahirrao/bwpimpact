@@ -325,7 +325,7 @@ export default function GlobalNav() {
                 id="message"
                 name="message"
                 required
-                rows={4}
+                rows={3}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-primary focus:border-transparent transition-all resize-none"
                 placeholder="Tell us about your project..."
               />

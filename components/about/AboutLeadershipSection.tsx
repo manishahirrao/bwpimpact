@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, Award, Shield, UserCircle } from 'lucide-react';
+import { ChevronDown, Award, Shield } from 'lucide-react';
+import Image from 'next/image';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const coreValues = [
@@ -49,12 +50,14 @@ export default function AboutLeadershipSection() {
                 className="absolute inset-0 rounded-xl overflow-hidden bg-gradient-to-br from-navy-light to-gold-light"
                 style={{ borderRadius: '24px', border: '3px solid #C9A844' }}
               >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center space-y-3 p-8">
-                    <UserCircle className="w-16 h-16 text-navy-primary mx-auto opacity-80" strokeWidth={1.5} />
-                    <p className="text-sm text-gray-600 font-medium">Priyam Talpade Mandrekar</p>
-                    <p className="text-xs text-gray-500 italic">Founder, BWP IMPACT</p>
-                  </div>
+                <div className="absolute inset-0">
+                  <Image
+                    src="/assets/about/priyam.jpg"
+                    alt="Priyam Talpade Mandrekar"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
                 </div>
               </div>
               {/* Gold accent border */}
