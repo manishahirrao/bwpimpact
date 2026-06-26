@@ -76,7 +76,7 @@ export default function GlobalNav() {
         className={cn(
           'fixed top-0 left-0 right-0 z-50',
           'transition-all duration-moderate ease-default',
-          'h-16 md:h-16',
+          'h-20 md:h-20',
           isScrolled
             ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200'
             : 'bg-transparent'
@@ -87,14 +87,14 @@ export default function GlobalNav() {
             {/* Logo */}
             <Link href="/" className="flex flex-col justify-center gap-1">
               {/* Logo image */}
-              <div className="relative h-7 md:h-8 w-[140px] md:w-[160px]">
+              <div className="relative h-10 md:h-12 w-[180px] md:w-[220px]">
                 <Image
-                  src="/assets/logo/logo.png"
+                  src="/assets/logo/logo_v2.png"
                   alt="BWP IMPACT"
                   fill
                   className={cn("object-contain object-left transition-all duration-300", isDarkHeader && "brightness-0 invert")}
                   priority
-                  sizes="(max-width: 768px) 140px, 160px"
+                  sizes="(max-width: 768px) 180px, 220px"
                 />
               </div>
             </Link>
@@ -203,8 +203,8 @@ export default function GlobalNav() {
               <div className="flex items-center justify-between px-6 h-16 border-b border-white/10">
                 {/* Mobile overlay logo */}
                 <div className="flex flex-col gap-1">
-                  <div className="relative h-8 w-[160px]">
-                    <Image src="/assets/logo/logo.png" alt="BWP IMPACT" fill className="object-contain object-left brightness-0 invert" sizes="160px" />
+                  <div className="relative h-12 w-[220px]">
+                    <Image src="/assets/logo/logo_v2.png" alt="BWP IMPACT" fill className="object-contain object-left brightness-0 invert" sizes="220px" />
                   </div>
                 </div>
                 <button

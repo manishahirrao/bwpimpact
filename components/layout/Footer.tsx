@@ -30,8 +30,8 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             {/* Footer logo */}
-            <div className="relative h-10 w-[180px]">
-              <Image src="/assets/logo/logo.png" alt="BWP IMPACT" fill className="object-contain object-left brightness-0 invert" sizes="180px" />
+            <div className="relative h-14 w-[240px]">
+              <Image src="/assets/logo/logo_v2.png" alt="BWP IMPACT" fill className="object-contain object-left brightness-0 invert" sizes="240px" />
             </div>
             <p className="text-[15px] text-gray-300 leading-[1.6]">
               Engineering high-converting social media ecosystems and AI-powered solutions
