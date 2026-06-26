@@ -9,7 +9,7 @@ import { WHATSAPP_BUSINESS_NUMBER } from '@/lib/whatsapp';
  */
 export default function WhatsAppFloat() {
   const href = `https://wa.me/${WHATSAPP_BUSINESS_NUMBER}?text=${encodeURIComponent(
-    'Hi BWP IMPACT! 👋 I just visited your website and would like to know more about your services.'
+    'Hi BWP IMPACT! I just visited your website and would like to know more about your services.'
   )}`;
 
   return (

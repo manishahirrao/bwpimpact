@@ -217,7 +217,7 @@ export const mobileMenuPanel: Variants = {
   },
 };
 
-// Step animations (for ImpactX How It Works)
+// Step animations (for VisibilityX How It Works)
 export const stepBadge: Variants = {
   hidden: { opacity: 0, scale: 0.8, y: 30 },
   visible: {

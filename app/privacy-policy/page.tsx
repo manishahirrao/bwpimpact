@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
     <main>
       <GlobalNav />
       <PageHero title="Privacy Policy" breadcrumbs={[{ label: 'Home', href: '/' }]} />
-      <section className="py-12 md:py-16">
+      <section className="py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6 prose prose-gray max-w-none">
           <p className="text-sm text-gray-500">Last updated: January 2025</p>
           <h2>1. Information We Collect</h2>
@@ -25,11 +25,11 @@ export default function PrivacyPolicyPage() {
           <h2>4. Analytics</h2>
           <p>We use Google Analytics 4 to understand how visitors use our site. This data is anonymised and only loaded with your cookie consent.</p>
           <h2>5. Data Retention</h2>
-          <p>Contact form data is retained for 24 months. You may request deletion of your data at any time by emailing hello@bwpimpact.com.</p>
+          <p>Contact form data is retained for 24 months. You may request deletion of your data at any time by emailing brandingwithpriyam@gmail.com.</p>
           <h2>6. Your Rights</h2>
           <p>Under the Information Technology Act 2000 (India) and applicable privacy laws, you have the right to access, correct, and request deletion of your personal data.</p>
           <h2>7. Contact</h2>
-          <p>For privacy-related queries, contact us at <a href="mailto:hello@bwpimpact.com" className="text-navy-primary underline">hello@bwpimpact.com</a>.</p>
+          <p>For privacy-related queries, contact us at <a href="mailto:brandingwithpriyam@gmail.com" className="text-navy-primary underline">brandingwithpriyam@gmail.com</a>.</p>
         </div>
       </section>
       <Footer />

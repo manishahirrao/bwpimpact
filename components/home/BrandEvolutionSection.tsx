@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { Target, Rocket, Trophy, ArrowDown } from 'lucide-react';
+import Image from 'next/image';
 import { fadeInUp } from '@/lib/animations';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
@@ -54,9 +56,11 @@ export default function BrandEvolutionSection() {
                 obsession.
               </p>
 
-              <div className="pt-6 flex flex-wrap gap-4">
+              <div className="pt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="flex items-center gap-3 px-5 py-3 bg-white rounded-xl shadow-sm border border-gray-200">
-                  <div className="text-2xl">🎯</div>
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-navy-light/10">
+                    <Target className="w-5 h-5 text-navy-primary" />
+                  </div>
                   <div>
                     <div className="text-sm font-semibold text-navy-primary">Results-Driven</div>
                     <div className="text-xs text-gray-600">ROI First, Always</div>
@@ -64,7 +68,9 @@ export default function BrandEvolutionSection() {
                 </div>
                 
                 <div className="flex items-center gap-3 px-5 py-3 bg-white rounded-xl shadow-sm border border-gray-200">
-                  <div className="text-2xl">🚀</div>
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gold-light/20">
+                    <Rocket className="w-5 h-5 text-gold-dark" />
+                  </div>
                   <div>
                     <div className="text-sm font-semibold text-navy-primary">AI-Powered</div>
                     <div className="text-xs text-gray-600">Next-Gen Solutions</div>
@@ -72,7 +78,9 @@ export default function BrandEvolutionSection() {
                 </div>
                 
                 <div className="flex items-center gap-3 px-5 py-3 bg-white rounded-xl shadow-sm border border-gray-200">
-                  <div className="text-2xl">🏆</div>
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-navy-light/10">
+                    <Trophy className="w-5 h-5 text-navy-primary" />
+                  </div>
                   <div>
                     <div className="text-sm font-semibold text-navy-primary">8+ Years</div>
                     <div className="text-xs text-gray-600">Proven Track Record</div>
@@ -91,34 +99,21 @@ export default function BrandEvolutionSection() {
           >
             <div className="relative aspect-square max-w-md mx-auto">
               {/* Placeholder for brand evolution image */}
-              <div className="absolute inset-0 rounded-2xl overflow-hidden bg-gradient-to-br from-navy-light via-white to-gold-light">
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center space-y-6">
-                  {/* Before */}
-                  <div className="space-y-2">
-                    <div className="text-sm text-gray-600 italic">Legacy</div>
-                    <div className="text-xl font-semibold text-navy-primary italic">
-                      Branding with Priyam
-                    </div>
-                  </div>
+              <div className="absolute inset-0 rounded-2xl overflow-hidden bg-gradient-to-br from-navy-light via-white to-gold-light shadow-2xl">
+                <Image 
+                  src="/assets/images/brand_evolution.png" 
+                  alt="BWP IMPACT Brand Evolution Strategy" 
+                  fill 
+                  className="object-cover transition-transform duration-700 hover:scale-105" 
+                  sizes="(max-width: 1024px) 100vw, 50vw" 
+                />
 
-                  {/* Arrow */}
-                  <div className="text-4xl text-gold-primary">↓</div>
-
-                  {/* After */}
-                  <div className="space-y-2">
-                    <div className="text-sm text-gray-600">Evolution</div>
-                    <div className="text-2xl font-bold text-gold-primary">
-                      BWP IMPACT
-                    </div>
-                    <div className="text-xs text-gray-600 italic">
-                      The Next Evolution
-                    </div>
-                  </div>
-                </div>
-
+                {/* Decorative overlay gradient to ensure text readability if needed, though this replaces the old text block */}
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent opacity-60" />
+                
                 {/* Decorative elements */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gold-primary/10 rounded-full blur-2xl" />
-                <div className="absolute bottom-0 left-0 w-32 h-32 bg-navy-primary/10 rounded-full blur-2xl" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gold-primary/20 rounded-full blur-2xl" />
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-navy-primary/20 rounded-full blur-2xl" />
               </div>
 
               {/* Accent border */}

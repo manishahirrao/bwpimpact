@@ -8,41 +8,42 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 const tabs = [
   {
     id: 'social',
-    label: 'Social Media',
+    label: 'Social Media & PR',
     icon: LayoutGrid,
     services: [
-      { title: 'Organic Platform Management', desc: 'Full-spectrum management across Instagram, Facebook, LinkedIn, and YouTube — content, scheduling, community.' },
-      { title: 'Strategic Content Creation', desc: 'Thumb-stopping creatives, conversion-focused captions, and platform-native formats engineered to grow your audience.' },
-      { title: 'Comprehensive SMM Audits', desc: 'Data-backed audits of your current social presence — gaps identified, opportunities quantified, roadmap delivered.' },
+      { title: 'Social Media Marketing', desc: 'Full-spectrum organic management and strategic content creation across Instagram, Facebook, LinkedIn, and YouTube.' },
+      { title: 'Social Media Audit Service', desc: 'Comprehensive, data-backed audits of your current social presence to identify gaps and deliver actionable growth roadmaps.' },
+      { title: 'Digital PR Services', desc: 'Strategic brand positioning, media relations, and digital press coverage to build your industry authority and trust.' },
     ],
   },
   {
     id: 'performance',
-    label: 'Performance Marketing',
+    label: 'Performance & Search',
     icon: BarChart2,
     services: [
-      { title: 'Meta & Google Ad Campaigns', desc: 'Precision-targeted paid campaigns across Meta (Facebook/Instagram) and Google — from strategy to creative to optimization.' },
-      { title: 'Marketplace Marketing', desc: 'Amazon, Flipkart, and D2C performance campaigns designed to drive sales velocity and improve organic ranking.' },
+      { title: 'Meta Ads & Google Ads', desc: 'Precision-targeted, high-ROI paid campaigns across Meta (Facebook/Instagram) and Google search and display networks.' },
+      { title: 'SEO Services', desc: 'Advanced on-page, off-page, and technical Search Engine Optimization to dominate organic search rankings.' },
+      { title: 'Digital Marketing Consultation', desc: 'Expert strategic consultation to audit your current funnels and architect high-converting digital growth plans.' },
     ],
   },
   {
     id: 'multimedia',
-    label: 'Multimedia & AI',
+    label: 'Multimedia & Branding',
     icon: Film,
     services: [
-      { title: 'Advanced Video Production', desc: 'High-retention video content — brand films, reels, product demos, and testimonial edits that convert cold audiences.' },
-      { title: 'Elite Graphic Design', desc: 'Premium visual identity, ad creatives, pitch decks, and brand collateral designed to command attention.' },
-      { title: 'AI Video Assets & Agents', desc: 'Next-generation AI-powered video generation and intelligent brand agents for automated content at enterprise scale.' },
+      { title: 'Video, Product & Reel Shoots', desc: 'High-end production shoots for brand films, commercial product photography, and viral short-form social reels.' },
+      { title: 'AI Video Creation & Editing', desc: 'Advanced post-production video editing and next-generation AI video asset generation for scalable content.' },
+      { title: 'Graphic Designing & Brand Identity', desc: 'Premium logo creation, brand guidelines, ad creatives, and comprehensive visual identity architecture.' },
     ],
   },
   {
     id: 'growth',
-    label: 'Growth Accelerators',
+    label: 'Web & Growth',
     icon: Rocket,
     services: [
-      { title: 'Influencer Marketing Networks', desc: 'Curated influencer partnerships — micro to macro — with performance-tracked campaigns and authentic brand alignment.' },
-      { title: 'Automated WhatsApp Marketing', desc: 'Intelligent WhatsApp automation flows for lead nurturing, re-engagement, and customer retention at scale.' },
-      { title: 'E-Commerce Web & App Architecture', desc: 'Conversion-optimized e-commerce builds on Shopify, WooCommerce, and custom stacks — built to sell, not just look good.' },
+      { title: 'E-Commerce & Website Development', desc: 'Custom, high-performance website and e-commerce builds engineered to convert organic and paid traffic into sales.' },
+      { title: 'Influencer Marketing', desc: 'Curated influencer and creator partnerships with performance-tracked campaigns and authentic brand alignment.' },
+      { title: 'WhatsApp Marketing', desc: 'Intelligent automation flows and direct broadcast campaigns for lead nurturing and high-conversion customer retention.' },
     ],
   },
 ];

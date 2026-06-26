@@ -1,19 +1,21 @@
 import Link from 'next/link';
-import { Mail } from 'lucide-react';
+import Image from 'next/image';
+import { Mail, Phone, Trophy, Handshake, Star, Heart } from 'lucide-react';
+import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { WHATSAPP_BUSINESS_NUMBER } from '@/lib/whatsapp';
 
 const footerLinks = {
   navigation: [
     { href: '/', label: 'Home' },
-    { href: '/about-services', label: 'About Us + Services' },
-    { href: '/impactx', label: 'ImpactX' },
+    { href: '/about-services', label: 'About Us / Services' },
+    { href: '/visibilityx', label: 'VisibilityX' },
     { href: '/privacy-policy', label: 'Privacy Policy' },
     { href: '/terms', label: 'Terms of Service' },
   ],
   social: [
-    { name: 'Instagram', href: 'https://instagram.com/bwpimpact', label: 'Instagram' },
-    { name: 'LinkedIn',  href: 'https://linkedin.com/company/bwpimpact', label: 'LinkedIn' },
-    { name: 'Facebook',  href: 'https://facebook.com/bwpimpact', label: 'Facebook' },
+    { name: 'Instagram', icon: FaInstagram, href: 'https://instagram.com/bwpimpact', label: 'Instagram' },
+    { name: 'LinkedIn', icon: FaLinkedin, href: 'https://linkedin.com/company/bwpimpact', label: 'LinkedIn' },
+    { name: 'Facebook', icon: FaFacebook, href: 'https://facebook.com/bwpimpact', label: 'Facebook' },
   ],
 };
 
@@ -27,25 +29,24 @@ export default function Footer() {
 
           {/* Brand Column */}
           <div className="space-y-4">
-            {/* Footer logo — spec: white variant, bold */}
-            <div className="text-[22px] font-bold tracking-tight">BWP IMPACT</div>
-            <p className="text-[11px] italic text-gray-400 font-light">
-              The Next Evolution of Branding with Priyam
-            </p>
+            {/* Footer logo */}
+            <div className="relative h-10 w-[180px]">
+              <Image src="/assets/logo/logo.png" alt="BWP IMPACT" fill className="object-contain object-left brightness-0 invert" sizes="180px" />
+            </div>
             <p className="text-[15px] text-gray-300 leading-[1.6]">
               Engineering high-converting social media ecosystems and AI-powered solutions
               for MSMEs, corporate brands, and ambitious entrepreneurs across India.
             </p>
             {/* Trust Badges */}
             <div className="flex flex-wrap gap-2 pt-2">
-              <span className="px-3 py-1.5 bg-white/10 rounded-full text-xs text-gray-300">
-                🏆 Maharashtra Udyog Gaurav
+              <span className="flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-xs text-gray-300">
+                <Trophy className="w-3.5 h-3.5 text-gold-primary" /> Maharashtra Udyog Gaurav
               </span>
-              <span className="px-3 py-1.5 bg-white/10 rounded-full text-xs text-gray-300">
-                🤝 BNI Member
+              <span className="flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-xs text-gray-300">
+                <Handshake className="w-3.5 h-3.5 text-gold-primary" /> BNI Member
               </span>
-              <span className="px-3 py-1.5 bg-white/10 rounded-full text-xs text-gray-300">
-                ⭐ 8+ Years Excellence
+              <span className="flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-xs text-gray-300">
+                <Star className="w-3.5 h-3.5 text-gold-primary" /> 8+ Years Excellence
               </span>
             </div>
           </div>
@@ -70,18 +71,26 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Connect Column */}
+          {/* Contact Column */}
           <div className="space-y-4">
             <h3 className="text-[13px] font-semibold uppercase tracking-widest text-gray-400">
-              Connect
+              Contact
             </h3>
             <div className="space-y-3">
               <a
-                href="mailto:hello@bwpimpact.com"
+                href="mailto:brandingwithpriyam@gmail.com"
                 className="flex items-center gap-3 text-[15px] text-gray-300 hover:text-white transition-colors duration-200"
               >
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                hello@bwpimpact.com
+                brandingwithpriyam@gmail.com
+              </a>
+
+              <a
+                href="tel:+917304601580"
+                className="flex items-center gap-3 text-[15px] text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                <Phone className="h-4 w-4 flex-shrink-0" />
+                +91 7304601580
               </a>
 
               {/* WhatsApp Link */}
@@ -101,16 +110,16 @@ export default function Footer() {
 
             {/* Social Links */}
             <div className="flex gap-5 pt-2">
-              {footerLinks.social.map(({ name, href, label }) => (
+              {footerLinks.social.map(({ name, icon: Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-400 hover:text-white transition-colors duration-200 opacity-70 hover:opacity-100"
+                  className="text-gray-400 hover:text-white transition-colors duration-200 opacity-70 hover:opacity-100"
                   aria-label={label}
                 >
-                  {name}
+                  <Icon className="h-5 w-5" />
                 </a>
               ))}
             </div>
@@ -120,11 +129,9 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[13px] text-gray-400 text-center md:text-left">
-            © 2025 BWP IMPACT. All rights reserved. Formerly Branding with Priyam.
+            © 2026 BWP IMPACT. All rights reserved. Formerly Branding with Priyam.
           </p>
-          <p className="text-[11px] text-gray-600">
-            Built with ❤️ for Indian businesses
-          </p>
+
         </div>
       </div>
     </footer>

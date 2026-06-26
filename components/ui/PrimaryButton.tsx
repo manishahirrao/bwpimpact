@@ -53,9 +53,9 @@ const PrimaryButton = forwardRef<HTMLButtonElement, PrimaryButtonProps>(
     };
 
     const sizeStyles = {
-      sm: 'h-9 px-5 text-sm',
-      default: 'h-[52px] px-7 text-base',
-      lg: 'h-14 px-8 text-md',
+      sm: 'min-h-[36px] py-2 px-5 text-sm',
+      default: 'min-h-[52px] py-3 px-7 text-base',
+      lg: 'min-h-[56px] py-3 px-8 text-md',
     };
 
     return (

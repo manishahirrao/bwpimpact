@@ -34,8 +34,8 @@ export function generateAuditWhatsAppLink(data: AuditFormData): string {
   return `https://wa.me/${WHATSAPP_BUSINESS_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
-// ─── ImpactX Form ────────────────────────────────────────────────────────────
-export interface ImpactXFormData {
+// ─── VisibilityX Form ────────────────────────────────────────────────────────────
+export interface VisibilityXFormData {
   fullName: string;
   companyName: string;
   email: string;
@@ -43,10 +43,10 @@ export interface ImpactXFormData {
   description: string;
 }
 
-export function generateImpactXWhatsAppLink(data: ImpactXFormData): string {
+export function generateVisibilityXWhatsAppLink(data: VisibilityXFormData): string {
   const message =
     `Hi BWP IMPACT! 👋\n\n` +
-    `I'm interested in *ImpactX AI Podcast Production*.\n\n` +
+    `I'm interested in *VisibilityX AI Podcast Production*.\n\n` +
     `*My Details:*\n` +
     `📌 Name: ${data.fullName}\n` +
     `📌 Company: ${data.companyName}\n` +
@@ -58,8 +58,30 @@ export function generateImpactXWhatsAppLink(data: ImpactXFormData): string {
   return `https://wa.me/${WHATSAPP_BUSINESS_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
+// ─── Contact Us Form ────────────────────────────────────────────────────────
+export interface ContactFormData {
+  fullName: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
+export function generateContactWhatsAppLink(data: ContactFormData): string {
+  const message =
+    `Hi BWP IMPACT! 👋\n\n` +
+    `I'd like to get in touch.\n\n` +
+    `*My Details:*\n` +
+    `📌 Name: ${data.fullName}\n` +
+    `📌 Email: ${data.email}\n` +
+    `📌 Phone: ${data.phone}\n` +
+    `📌 Message: ${data.message}\n\n` +
+    `Looking forward to connecting!`;
+
+  return `https://wa.me/${WHATSAPP_BUSINESS_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+
 // ─── Quick CTA (no form) ─────────────────────────────────────────────────────
-export type QuickCtaType = 'audit' | 'strategy' | 'impactx';
+export type QuickCtaType = 'audit' | 'strategy' | 'visibilityx';
 
 export function generateQuickWhatsAppLink(type: QuickCtaType): string {
   const messages: Record<QuickCtaType, string> =
@@ -68,8 +90,8 @@ export function generateQuickWhatsAppLink(type: QuickCtaType): string {
       `Hi BWP IMPACT! 👋\n\nI'd like to claim my *Free Digital Audit*. Please share more details!`,
     strategy:
       `Hi BWP IMPACT! 👋\n\nI'm interested in booking a *1-on-1 Growth Strategy Session*. When can we connect?`,
-    impactx:
-      `Hi BWP IMPACT! 👋\n\nI'm interested in *ImpactX AI Podcasts*. Can you tell me more?`,
+    visibilityx:
+      `Hi BWP IMPACT! 👋\n\nI'm interested in *VisibilityX AI Podcasts*. Can you tell me more?`,
   };
 
   return `https://wa.me/${WHATSAPP_BUSINESS_NUMBER}?text=${encodeURIComponent(messages[type])}`;

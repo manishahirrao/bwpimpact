@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, Award, Shield } from 'lucide-react';
+import { ChevronDown, Award, Shield, UserCircle } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const coreValues = [
@@ -51,7 +51,7 @@ export default function AboutLeadershipSection() {
               >
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center space-y-3 p-8">
-                    <div className="text-5xl">👩‍💼</div>
+                    <UserCircle className="w-16 h-16 text-navy-primary mx-auto opacity-80" strokeWidth={1.5} />
                     <p className="text-sm text-gray-600 font-medium">Priyam Talpade Mandrekar</p>
                     <p className="text-xs text-gray-500 italic">Founder, BWP IMPACT</p>
                   </div>

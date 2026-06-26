@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Rocket } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import PrimaryButton from '@/components/ui/PrimaryButton';
 import { generateQuickWhatsAppLink } from '@/lib/whatsapp';
 import {
@@ -19,23 +20,11 @@ import {
  */
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center bg-white" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
-      <div className="max-w-container mx-auto px-6 w-full pt-16 lg:pt-0">
+    <section className="relative pt-24 pb-20 lg:pt-28 lg:pb-32 min-h-[90vh] flex flex-col justify-center bg-white">
+      <div className="max-w-container mx-auto px-6 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-6 lg:space-y-8">
-            {/* Eyebrow tag */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="inline-block"
-            >
-              <span className="inline-flex items-center px-4 py-2 rounded-full bg-gold-light/30 text-gold-dark text-sm font-medium">
-                Built on 8+ Years of Excellence
-              </span>
-            </motion.div>
-
             {/* Main Headline */}
             <motion.h1
               variants={heroHeadline}
@@ -74,25 +63,38 @@ export default function HeroSection() {
               variants={heroCTA}
               initial="hidden"
               animate="visible"
-              className="flex flex-col sm:flex-row gap-4 pt-4"
+              className="flex flex-col sm:flex-row flex-wrap gap-4 pt-4 w-full"
             >
               <a
                 href={generateQuickWhatsAppLink('strategy')}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="w-full sm:w-auto"
               >
                 <PrimaryButton
                   variant="gold"
                   size="lg"
-                  icon={<ArrowRight className="h-4 w-4" />}
+                  icon={<ArrowRight className="h-4 w-4 flex-shrink-0" />}
+                  className="w-full sm:w-auto"
                 >
                   Book Your 1-on-1 Growth Strategy Session
                 </PrimaryButton>
               </a>
 
-              <Link href="/impactx">
-                <PrimaryButton variant="ghost-navy" size="lg">
-                  Explore ImpactX AI Podcasts →
+              <a
+                href="https://drive.google.com/drive/u/0/folders/1rpjOCqZVGMai4El5M1meKY-sarcriMNz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+              >
+                <PrimaryButton variant="navy" size="lg" className="w-full sm:w-auto">
+                  View Our Portfolio
+                </PrimaryButton>
+              </a>
+
+              <Link href="/visibilityx" className="w-full sm:w-auto">
+                <PrimaryButton variant="ghost-navy" size="lg" className="w-full sm:w-auto">
+                  Explore VisibilityX AI Podcasts →
                 </PrimaryButton>
               </Link>
             </motion.div>
@@ -102,7 +104,7 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="flex flex-wrap items-center gap-6 pt-8 text-sm text-gray-600"
+              className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 sm:gap-6 pt-8 text-sm text-gray-600"
             >
               <div className="flex items-center gap-2">
                 <svg className="h-5 w-5 text-gold-primary" fill="currentColor" viewBox="0 0 20 20">
@@ -130,21 +132,17 @@ export default function HeroSection() {
             variants={heroImage}
             initial="hidden"
             animate="visible"
-            className="relative h-[400px] lg:h-[600px]"
+            className="relative w-full h-[400px] lg:h-[600px]"
           >
-            {/* Placeholder for hero image */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-navy-light via-gold-light/20 to-navy-light overflow-hidden">
-              {/* Placeholder content */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-4 p-8">
-                  <div className="text-6xl">🚀</div>
-                  <p className="text-sm text-gray-600">
-                    Hero Image Placeholder
-                    <br />
-                    <span className="text-xs">(1200×800px)</span>
-                  </p>
-                </div>
-              </div>
+            <div className="absolute w-full h-full inset-0 rounded-2xl bg-gradient-to-br from-navy-light via-gold-light/20 to-navy-light overflow-hidden shadow-2xl">
+              <Image 
+                src="/assets/images/agency_hero_v2.png" 
+                alt="BWP IMPACT Digital Agency Workspace" 
+                fill 
+                className="object-cover transition-transform duration-700 hover:scale-105" 
+                priority 
+                sizes="(max-width: 1024px) 100vw, 50vw" 
+              />
               
               {/* Decorative elements */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-gold-primary/10 rounded-full blur-3xl" />
@@ -157,8 +155,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Mobile gradient overlay for image */}
-      <div className="lg:hidden absolute inset-0 bg-gradient-to-b from-white via-transparent to-white pointer-events-none" />
     </section>
   );
 }

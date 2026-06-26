@@ -54,7 +54,7 @@ export default function TrustRibbon() {
             style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
           >
             {allBadges.map((badge, index) => (
-              <div key={index} className="inline-flex items-center gap-3">
+              <div key={index} className="inline-flex items-center gap-3 flex-shrink-0">
                 <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
                   <badge.icon className="h-4 w-4 text-gold-primary flex-shrink-0" />
                   <span className="text-white text-xs font-medium">{badge.text}</span>

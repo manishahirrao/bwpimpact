@@ -27,7 +27,7 @@ const pillars = [
     icon: Zap,
     title: 'AI-Accelerated Production',
     description:
-      'From ImpactX AI podcasts to automated content calendars, we leverage next-generation AI tools to produce at scale while maintaining brand authenticity. Speed without compromise.',
+      'From VisibilityX AI podcasts to automated content calendars, we leverage next-generation AI tools to produce at scale while maintaining brand authenticity. Speed without compromise.',
     borderColor: 'border-navy-primary',
   },
 ];

@@ -52,7 +52,7 @@ export function LocalBusinessJsonLd({ siteUrl = 'https://bwpimpact.com' }: Local
       itemListElement: [
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Social Media Management' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Performance Marketing' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Video Production (ImpactX)' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Video Production (VisibilityX)' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Influencer Marketing' } },
       ],
     },
