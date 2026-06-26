@@ -13,6 +13,7 @@ const clientLogos = [
   { src: '/assets/logo/dynamic-travels.jpg', alt: 'Dynamic Travels' },
   { src: '/assets/logo/farm-house.jpg', alt: 'Farm House' },
   { src: '/assets/logo/fashion.jpg', alt: 'Fashion Brand' },
+  { src: '/assets/logo/316063.jpg', alt: 'Client' },
 ];
 
 // Duplicate for seamless infinite loop
