@@ -25,8 +25,9 @@ export default function VisibilityXPage() {
       <VisibilityXHero />
       <VisibilityXFeatureSuite />
       <ComparisonTable />
-      <VisibilityXAIFilms />
       <HowItWorksSteps />
+      <VisibilityXAIFilms />
+     
       <VisibilityXClosingCTA />
       <Footer />
     </main>
