@@ -42,7 +42,7 @@ export default function HeroSection() {
               animate="visible"
               className="text-[17px] text-gray-700 leading-relaxed max-w-xl"
             >
-              We don't chase vanity metrics. At BWP Impact, we engineer 
+              We chase real impact, not just numbers. At BWP Impact, we engineer 
               high-converting social media ecosystems, high-yield lead generation 
               engines, and next-generation AI solutions for MSMEs, corporate brands, 
               and ambitious entrepreneurs.

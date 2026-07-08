@@ -21,7 +21,7 @@ const steps = [
   {
     number: '3',
     icon: Zap,
-    title: 'Omni-Distribution Delivery',
+    title: 'Multi-Format Broadcasting',
     desc: 'You receive premium, high-retention horizontal video files and vertical viral clips fully ready to engage your audience and convert cold traffic.',
   },
 ];

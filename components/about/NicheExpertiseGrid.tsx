@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Utensils, Hotel, Home, Heart, Briefcase, GraduationCap } from 'lucide-react';
+import { Utensils, Hotel, Home, Heart, GraduationCap } from 'lucide-react';
 import PrimaryButton from '@/components/ui/PrimaryButton';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { staggerContainer, staggerItem } from '@/lib/animations';
@@ -12,8 +12,7 @@ const niches = [
   { icon: Hotel,          title: 'Premium Resorts & Staycations',       desc: 'Aspirational content and targeted campaigns that fill your calendar with high-value guests.' },
   { icon: Home,           title: 'Real Estate Developers',              desc: 'Lead generation funnels and trust-building content that convert browsers into buyers.' },
   { icon: Heart,          title: 'Healthcare Professionals & Clinics',  desc: 'HIPAA-sensitive marketing that builds credibility and drives appointment bookings consistently.' },
-  { icon: Briefcase,      title: 'Corporate Services (CA, CS, Lawyers)', desc: 'Thought leadership content and digital authority-building for professional service providers.' },
-  { icon: GraduationCap,  title: 'Coaching & Educational Academies',    desc: 'Enrollment-focused funnels and community-building strategies for coaches and educators.' },
+  { icon: GraduationCap,  title: 'Personal Branding',    desc: 'Build a powerful personal brand that positions you as an authority in your field — through strategic content, digital presence, and consistent storytelling that turns your name into an asset.' },
 ];
 
 export default function NicheExpertiseGrid() {

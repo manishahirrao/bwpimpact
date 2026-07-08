@@ -5,6 +5,7 @@ import VisibilityXHero from '@/components/visibilityx/VisibilityXHero';
 import VisibilityXFeatureSuite from '@/components/visibilityx/VisibilityXFeatureSuite';
 import ComparisonTable from '@/components/visibilityx/ComparisonTable';
 import HowItWorksSteps from '@/components/visibilityx/HowItWorksSteps';
+import VisibilityXAIFilms from '@/components/visibilityx/VisibilityXAIFilms';
 import VisibilityXClosingCTA from '@/components/visibilityx/VisibilityXClosingCTA';
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function VisibilityXPage() {
       <VisibilityXHero />
       <VisibilityXFeatureSuite />
       <ComparisonTable />
+      <VisibilityXAIFilms />
       <HowItWorksSteps />
       <VisibilityXClosingCTA />
       <Footer />

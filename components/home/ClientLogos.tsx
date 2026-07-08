@@ -13,7 +13,6 @@ const clientLogos = [
   { src: '/assets/logo/dynamic-travels.jpg', alt: 'Dynamic Travels' },
   { src: '/assets/logo/farm-house.jpg', alt: 'Farm House' },
   { src: '/assets/logo/fashion.jpg', alt: 'Fashion Brand' },
-  { src: '/assets/logo/316063.jpg', alt: 'Client' },
 ];
 
 // Duplicate for seamless infinite loop
@@ -43,7 +42,7 @@ export default function ClientLogos() {
       {prefersReduced ? (
         <div className="flex flex-wrap justify-center gap-8 px-6">
           {clientLogos.map((logo, i) => (
-            <div key={i} className="relative h-12 w-32 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div key={i} className="relative h-12 w-32 opacity-80 hover:opacity-100 transition-all duration-300">
               <Image src={logo.src} alt={logo.alt} fill className="object-contain" />
             </div>
           ))}
@@ -60,7 +59,7 @@ export default function ClientLogos() {
             style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
           >
             {allLogos.map((logo, index) => (
-              <div key={index} className="relative h-12 w-32 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex-shrink-0">
+              <div key={index} className="relative h-12 w-32 opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0">
                 <Image src={logo.src} alt={logo.alt} fill className="object-contain" sizes="128px" />
               </div>
             ))}

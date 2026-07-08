@@ -3,6 +3,7 @@ import GlobalNav from '@/components/layout/GlobalNav';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/home/HeroSection';
 import ClientLogos from '@/components/home/ClientLogos';
+import PartnersSection from '@/components/home/PartnersSection';
 import TrustRibbon from '@/components/home/TrustRibbon';
 import BrandEvolutionSection from '@/components/home/BrandEvolutionSection';
 import CorePillarsSection from '@/components/home/CorePillarsSection';
@@ -31,9 +32,11 @@ export default function HomePage() {
       <LocalBusinessJsonLd />
       <GlobalNav />
       <HeroSection />
-      <ClientLogos />
+    
+      
       <TrustRibbon />
       <BrandEvolutionSection />
+         <ClientLogos />
       <CorePillarsSection />
       <LeadCaptureBanner />
       <Footer />

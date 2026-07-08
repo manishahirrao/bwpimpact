@@ -5,6 +5,7 @@ import PageHero from '@/components/ui/PageHero';
 import AboutLeadershipSection from '@/components/about/AboutLeadershipSection';
 import ServicesTabLayout from '@/components/about/ServicesTabLayout';
 import NicheExpertiseGrid from '@/components/about/NicheExpertiseGrid';
+import PartnersSection from '@/components/home/PartnersSection';
 import { PersonJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
@@ -30,8 +31,10 @@ export default function AboutServicesPage() {
       />
 
       <AboutLeadershipSection />
+      <PartnersSection/>
       <ServicesTabLayout />
       <NicheExpertiseGrid />
+     
 
       <Footer />
     </main>

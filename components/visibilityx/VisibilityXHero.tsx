@@ -1,13 +1,18 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, LayoutGrid } from 'lucide-react';
 import PrimaryButton from '@/components/ui/PrimaryButton';
+import PackagesModal from '@/components/visibilityx/PackagesModal';
 import { generateQuickWhatsAppLink } from '@/lib/whatsapp';
 
 export default function VisibilityXHero() {
+  const [packagesOpen, setPackagesOpen] = useState(false);
+
   return (
     <>
+      <PackagesModal isOpen={packagesOpen} onClose={() => setPackagesOpen(false)} />
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 min-h-[90vh] flex flex-col justify-center bg-navy-deep overflow-hidden">
         {/* Ambient glow */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-primary/5 rounded-full blur-3xl pointer-events-none" />
@@ -73,12 +78,14 @@ export default function VisibilityXHero() {
                   </PrimaryButton>
                 </a>
 
-                {/* Pricing pill */}
-                <div className="inline-flex items-center justify-center px-5 py-3 min-h-[56px] border border-gold-primary rounded-2xl md:rounded-full w-full md:w-auto text-center">
-                  <span className="text-gold-primary font-semibold text-base">
-                    Packages start from just ₹5,999/-
-                  </span>
-                </div>
+                {/* Explore Packages button */}
+                <button
+                  onClick={() => setPackagesOpen(true)}
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[56px] border border-white/30 rounded-2xl md:rounded-full w-full md:w-auto text-center text-white font-semibold text-base hover:border-gold-primary hover:text-gold-primary transition-colors duration-200"
+                >
+                  <LayoutGrid className="h-4 w-4 flex-shrink-0" />
+                  Explore Packages
+                </button>
               </motion.div>
             </div>
 

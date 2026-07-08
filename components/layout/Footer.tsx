@@ -13,9 +13,9 @@ const footerLinks = {
     { href: '/terms', label: 'Terms of Service' },
   ],
   social: [
-    { name: 'Instagram', icon: FaInstagram, href: 'https://instagram.com/bwpimpact', label: 'Instagram' },
-    { name: 'LinkedIn', icon: FaLinkedin, href: 'https://linkedin.com/company/bwpimpact', label: 'LinkedIn' },
-    { name: 'Facebook', icon: FaFacebook, href: 'https://facebook.com/bwpimpact', label: 'Facebook' },
+    { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/bwpimpact?igsh=aHY0NDEzcDZqcHM3', label: 'Instagram' },
+    { name: 'LinkedIn', icon: FaLinkedin, href: 'https://www.linkedin.com/company/bwp-impact/', label: 'LinkedIn' },
+    { name: 'Facebook', icon: FaFacebook, href: 'https://www.facebook.com/bwpimpact/', label: 'Facebook' },
   ],
 };
 
@@ -104,7 +104,7 @@ export default function Footer() {
                 <svg viewBox="0 0 24 24" className="h-4 w-4 flex-shrink-0 fill-current" aria-hidden="true">
                   <path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.75.469 3.478 1.36 4.992L2 22l5.162-1.328A9.955 9.955 0 0012.001 22C17.523 22 22 17.522 22 12S17.523 2 12.001 2zm0 18.182a8.178 8.178 0 01-4.172-1.143l-.299-.178-3.063.79.812-2.963-.196-.308A8.147 8.147 0 013.818 12c0-4.513 3.671-8.182 8.183-8.182S20.182 7.487 20.182 12 16.512 20.182 12.001 20.182zm4.531-6.163c-.249-.124-1.472-.725-1.7-.809-.228-.083-.393-.124-.558.125-.165.248-.638.808-.782.976-.145.166-.29.186-.538.062-.25-.124-1.049-.387-1.997-1.233-.738-.658-1.237-1.471-1.382-1.72-.145-.249-.015-.383.109-.507.112-.111.249-.29.373-.435.125-.145.166-.249.248-.415.083-.166.042-.311-.021-.435-.062-.125-.558-1.343-.765-1.839-.2-.483-.406-.417-.558-.425l-.475-.008c-.166 0-.435.062-.662.311-.228.248-.869.849-.869 2.07s.89 2.401 1.014 2.567c.125.166 1.754 2.679 4.249 3.755.594.256 1.058.409 1.42.524.597.19 1.14.163 1.569.099.479-.071 1.473-.602 1.681-1.184.207-.58.207-1.078.145-1.184-.062-.104-.228-.166-.476-.29z" />
                 </svg>
-                WhatsApp Business
+                WhatsApp 
               </a>
             </div>
 

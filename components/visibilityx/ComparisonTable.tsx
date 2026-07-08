@@ -53,47 +53,69 @@ export default function ComparisonTable() {
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="overflow-x-auto -webkit-overflow-scrolling-touch rounded-xl border border-gray-200 shadow-md"
         >
-          <table className="w-full min-w-[640px] border-collapse">
-            <thead>
-              <tr>
-                <th className="bg-navy-primary text-white text-xs font-semibold uppercase tracking-[0.06em] px-6 py-4 text-left sticky left-0 z-10">
-                  Commercial Feature
-                </th>
-                <th className="bg-navy-primary text-white text-xs font-semibold uppercase tracking-[0.06em] px-6 py-4 text-left min-w-[240px] w-2/5">
-                  Traditional Brand Podcasts
-                </th>
-                <th className="bg-gold-primary text-navy-deep text-xs font-semibold uppercase tracking-[0.06em] px-6 py-4 text-left min-w-[240px] w-2/5">
-                  ✦ VisibilityX AI Podcast System
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, i) => (
-                <tr key={row.feature} className={i % 2 === 0 ? 'bg-white' : 'bg-off-white'}>
-                  <td
-                    className="sticky left-0 z-10 px-6 py-5 text-xs font-semibold text-navy-primary border-r border-gray-200 min-w-[160px]"
-                    style={{ background: 'inherit' }}
-                  >
-                    {row.feature}
-                  </td>
-                  {/* Traditional column — spec: 14px, gray-400 (muted) */}
-                  <td className="px-6 py-5 text-[14px] text-gray-400 leading-relaxed border-r border-gray-200">
-                    {row.traditional}
-                  </td>
-                  {/* VisibilityX column — spec: 14px, navy-primary, weight-500 */}
-                  <td
-                    className="px-6 py-5 text-[14px] text-navy-primary font-medium leading-relaxed border-l-[3px] border-gold-primary"
-                    style={{ background: 'rgba(201,168,68,0.04)' }}
-                  >
-                    <span className="text-gold-primary mr-1">✦</span>
-                    {row.visibilityx}
-                  </td>
+          {/* Desktop table view */}
+          <div className="hidden md:block overflow-x-auto rounded-xl border border-gray-200 shadow-md">
+            <table className="w-full min-w-[640px] border-collapse">
+              <thead>
+                <tr>
+                  <th className="bg-navy-primary text-white text-xs font-semibold uppercase tracking-[0.06em] px-6 py-4 text-left">
+                    Commercial Feature
+                  </th>
+                  <th className="bg-navy-primary text-white text-xs font-semibold uppercase tracking-[0.06em] px-6 py-4 text-left min-w-[240px] w-2/5">
+                    Traditional Brand Podcasts
+                  </th>
+                  <th className="bg-gold-primary text-navy-deep text-xs font-semibold uppercase tracking-[0.06em] px-6 py-4 text-left min-w-[240px] w-2/5">
+                    ✦ VisibilityX AI Podcast System
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {rows.map((row, i) => (
+                  <tr key={row.feature} className={i % 2 === 0 ? 'bg-white' : 'bg-off-white'}>
+                    <td className="px-6 py-5 text-xs font-semibold text-navy-primary border-r border-gray-200 min-w-[160px]">
+                      {row.feature}
+                    </td>
+                    <td className="px-6 py-5 text-[14px] text-gray-400 leading-relaxed border-r border-gray-200">
+                      {row.traditional}
+                    </td>
+                    <td
+                      className="px-6 py-5 text-[14px] text-navy-primary font-medium leading-relaxed border-l-[3px] border-gold-primary"
+                      style={{ background: 'rgba(201,168,68,0.04)' }}
+                    >
+                      <span className="text-gold-primary mr-1">✦</span>
+                      {row.visibilityx}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Mobile card view */}
+          <div className="md:hidden space-y-6">
+            {rows.map((row, i) => (
+              <div key={row.feature} className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+                <div className="bg-navy-primary px-5 py-3">
+                  <h3 className="text-sm font-semibold text-white">{row.feature}</h3>
+                </div>
+                <div className="p-5 space-y-4">
+                  <div>
+                    <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                      Traditional Approach
+                    </div>
+                    <p className="text-[14px] text-gray-600 leading-relaxed">{row.traditional}</p>
+                  </div>
+                  <div className="pt-3 border-t-2 border-gold-primary/30" style={{ background: 'rgba(201,168,68,0.04)' }}>
+                    <div className="text-xs font-semibold text-gold-primary uppercase tracking-wider mb-2 flex items-center gap-1">
+                      <span>✦</span> VisibilityX Advantage
+                    </div>
+                    <p className="text-[14px] text-navy-primary font-medium leading-relaxed">{row.visibilityx}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

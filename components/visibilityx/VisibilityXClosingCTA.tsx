@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
 import PrimaryButton from '@/components/ui/PrimaryButton';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { generateQuickWhatsAppLink } from '@/lib/whatsapp';
@@ -26,8 +27,8 @@ export default function VisibilityXClosingCTA() {
         >
           {/* Closing headline — spec: text-3xl (48px) desktop */}
           <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-bold text-white tracking-[-0.03em] leading-[1.1]">
-            Let Your Avatar Do the Talking.{' '}
-            <span className="text-gold-primary">Let Your Brand Scale the Impact.</span>
+            Turn Conversations into{' '}
+            <span className="text-gold-primary">Market Influence and Measurable Brand Impact.</span>
           </h2>
 
           {/* Subtext — spec: text-md = 17px */}
@@ -55,6 +56,31 @@ export default function VisibilityXClosingCTA() {
           <p className="text-sm text-gray-500 pt-2">
             Starting at ₹5,999/- &nbsp;|&nbsp; Delivered in days, not weeks
           </p>
+
+          {/* VisibilityX Social Links */}
+          <div className="pt-6 flex flex-col items-center gap-3">
+            <p className="text-xs uppercase tracking-widest text-gray-500">Follow VisibilityX</p>
+            <div className="flex gap-4">
+              <a
+                href="https://www.youtube.com/channel/UCQRFZHk4tyCnINMd4mHYOOg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-gold-primary transition-colors duration-200"
+                aria-label="VisibilityX YouTube"
+              >
+                <FaYoutube className="h-6 w-6" />
+              </a>
+              <a
+                href="https://www.instagram.com/visibilityx.bwp?igsh=dTUzc2VweGNoZmsz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-gold-primary transition-colors duration-200"
+                aria-label="VisibilityX Instagram"
+              >
+                <FaInstagram className="h-6 w-6" />
+              </a>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
