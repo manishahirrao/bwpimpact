@@ -7,7 +7,7 @@ const clientLogos = [
   { src: '/assets/logo/icici.jpg', alt: 'ICICI' },
   { src: '/assets/logo/meril.jpg', alt: 'Meril' },
   { src: '/assets/logo/LB.png', alt: 'LB' },
-  { src: '/assets/logo/E-magine.jpg', alt: 'E-magine' },
+ 
   { src: '/assets/logo/sugoi.jpg', alt: 'Sugoi' },
   { src: '/assets/logo/wealthness.jpg', alt: 'Wealthness' },
   { src: '/assets/logo/dynamic-travels.jpg', alt: 'Dynamic Travels' },
