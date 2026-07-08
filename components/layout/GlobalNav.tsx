@@ -150,7 +150,7 @@ export default function GlobalNav() {
                   size="sm"
                   className="h-9 px-4 text-[13px]"
                 >
-                  Claim Your Free Digital Audit
+                  Get Social Media Audit at ₹199/-
                 </PrimaryButton>
               </a>
             </div>
@@ -257,7 +257,7 @@ export default function GlobalNav() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <PrimaryButton variant="gold" size="lg" className="w-full text-[15px] shadow-gold">
-                    Claim Your Free Digital Audit
+                    Get Social Media Audit at ₹199/-
                   </PrimaryButton>
                 </a>
                 <p className="text-center text-[10px] text-white/40 mt-6 uppercase tracking-[0.2em]">
