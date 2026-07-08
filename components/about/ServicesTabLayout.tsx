@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LayoutGrid, BarChart2, Film, Rocket, ChevronDown } from 'lucide-react';
+import { LayoutGrid, BarChart2, Film, Rocket, Lightbulb, ChevronDown } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const tabs = [
@@ -14,7 +14,7 @@ const tabs = [
       { title: 'Social Media Marketing', desc: 'Full-spectrum organic management and strategic content creation across Instagram, Facebook, LinkedIn, and YouTube.' },
       { title: 'Social Media Audit Service', desc: 'Comprehensive, data-backed audits of your current social presence to identify gaps and deliver actionable growth roadmaps.' },
       { title: 'Digital PR Services', desc: 'Strategic brand positioning, media relations, and digital press coverage to build your industry authority and trust.' },
-      { title: 'Website UI & UX Design', desc: 'User-centered design that creates intuitive, beautiful digital experiences optimized for conversion and engagement.' },
+      { title: 'Influencer Marketing', desc: 'Curated influencer and creator partnerships with performance-tracked campaigns and authentic brand alignment.' },
       { title: 'WhatsApp Marketing', desc: 'Intelligent automation flows and direct broadcast campaigns for lead nurturing and high-conversion customer retention.' },
     ],
   },
@@ -25,7 +25,6 @@ const tabs = [
     services: [
       { title: 'Meta Ads & Google Ads', desc: 'Precision-targeted, high-ROI paid campaigns across Meta (Facebook/Instagram) and Google search and display networks.' },
       { title: 'SEO Services', desc: 'Advanced on-page, off-page, and technical Search Engine Optimization to dominate organic search rankings.' },
-      { title: 'Digital Marketing Consultation', desc: 'Expert strategic consultation to audit your current funnels and architect high-converting digital growth plans.' },
     ],
   },
   {
@@ -43,10 +42,20 @@ const tabs = [
     label: 'Web & Growth',
     icon: Rocket,
     services: [
+      { title: 'Website UI & UX Design', desc: 'User-centered design that creates intuitive, beautiful digital experiences optimized for conversion and engagement.' },
       { title: 'Dynamic Website Development', desc: 'Custom, high-performance website builds engineered to convert organic and paid traffic into sales with interactive features.' },
       { title: 'E-Commerce Website Development', desc: 'Full-featured online stores with secure payment gateways, inventory management, and conversion-optimized checkout flows.' },
       { title: 'Link in Bio Site', desc: 'Branded micro-sites designed for social media profiles to consolidate all your important links in one elegant destination.' },
-      { title: 'Influencer Marketing', desc: 'Curated influencer and creator partnerships with performance-tracked campaigns and authentic brand alignment.' },
+    ],
+  },
+  {
+    id: 'consultation',
+    label: 'Strategic Consultation',
+    icon: Lightbulb,
+    services: [
+      { title: 'Digital Marketing Consultation', desc: 'Expert strategic consultation to audit your current funnels and architect high-converting digital growth plans.' },
+      { title: 'Brand Strategy & Positioning', desc: 'Comprehensive brand architecture consulting to define your market position, messaging framework, and differentiation strategy.' },
+      { title: 'Growth Roadmap Planning', desc: 'Custom digital growth blueprints with channel strategy, KPI frameworks, and phased execution plans aligned with your business goals.' },
     ],
   },
 ];
@@ -80,7 +89,7 @@ export default function ServicesTabLayout() {
             The Comprehensive Service Ecosystem
           </h2>
           <p className="text-[17px] text-gray-700 mt-3 max-w-2xl mx-auto">
-            Four integrated verticals, one unified growth strategy.
+            Five integrated verticals, one unified growth strategy.
           </p>
         </motion.div>
 

@@ -81,10 +81,10 @@ export default function AboutLeadershipSection() {
 
             <div className="space-y-3 text-[15px] text-gray-700 leading-[1.6]">
               <p>
-                With a <strong>PGDM in Marketing Management</strong> and a background in{' '}
-                <strong>Nielsen market research consulting</strong>, Priyam brings the rigor of
-                corporate strategy to every engagement — without losing the agility that growing
-                businesses need.
+                With a <strong>PGDM in Marketing Management</strong> and a deep-rooted passion for 
+                blending traditional marketing wisdom with cutting-edge digital strategies, Priyam 
+                brings a unique perspective to every engagement — one that honors timeless brand-building 
+                principles while leveraging the latest in <strong>digital marketing and AI-driven innovation</strong>.
               </p>
               <p>
                 Certified in <strong>AI-driven digital marketing</strong>, she architects
