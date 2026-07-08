@@ -25,11 +25,11 @@ export default function PrivacyPolicyPage() {
           <h2>4. Analytics</h2>
           <p>We use Google Analytics 4 to understand how visitors use our site. This data is anonymised and only loaded with your cookie consent.</p>
           <h2>5. Data Retention</h2>
-          <p>Contact form data is retained for 24 months. You may request deletion of your data at any time by emailing brandingwithpriyam@gmail.com.</p>
+          <p>Contact form data is retained for 24 months. You may request deletion of your data at any time by emailing priyam@bwpimpact.com.</p>
           <h2>6. Your Rights</h2>
           <p>Under the Information Technology Act 2000 (India) and applicable privacy laws, you have the right to access, correct, and request deletion of your personal data.</p>
           <h2>7. Contact</h2>
-          <p>For privacy-related queries, contact us at <a href="mailto:brandingwithpriyam@gmail.com" className="text-navy-primary underline">brandingwithpriyam@gmail.com</a>.</p>
+          <p>For privacy-related queries, contact us at <a href="mailto:priyam@bwpimpact.com" className="text-navy-primary underline">priyam@bwpimpact.com</a>.</p>
         </div>
       </section>
       <Footer />

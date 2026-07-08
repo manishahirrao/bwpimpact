@@ -344,7 +344,7 @@ export default function GlobalNav() {
                 variant="gold"
                 className="w-full"
               >
-                Send via WhatsApp →
+                Send →
               </PrimaryButton>
             </div>
             <p className="text-xs text-gray-500 text-center">

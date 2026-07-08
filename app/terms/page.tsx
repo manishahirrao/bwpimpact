@@ -29,7 +29,7 @@ export default function TermsPage() {
           <h2>6. Governing Law</h2>
           <p>These terms are governed by the laws of Maharashtra, India. Any disputes shall be subject to the jurisdiction of courts in Pune, Maharashtra.</p>
           <h2>7. Contact</h2>
-          <p>For terms-related queries, email <a href="mailto:brandingwithpriyam@gmail.com" className="text-navy-primary underline">brandingwithpriyam@gmail.com</a>.</p>
+          <p>For terms-related queries, email <a href="mailto:priyam@bwpimpact.com" className="text-navy-primary underline">priyam@bwpimpact.com</a>.</p>
         </div>
       </section>
       <Footer />

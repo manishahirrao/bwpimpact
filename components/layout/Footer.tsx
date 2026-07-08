@@ -78,11 +78,11 @@ export default function Footer() {
             </h3>
             <div className="space-y-3">
               <a
-                href="mailto:brandingwithpriyam@gmail.com"
+                href="mailto:priyam@bwpimpact.com"
                 className="flex items-center gap-3 text-[15px] text-gray-300 hover:text-white transition-colors duration-200"
               >
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                brandingwithpriyam@gmail.com
+                priyam@bwpimpact.com
               </a>
 
               <a

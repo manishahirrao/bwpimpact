@@ -14,6 +14,8 @@ const tabs = [
       { title: 'Social Media Marketing', desc: 'Full-spectrum organic management and strategic content creation across Instagram, Facebook, LinkedIn, and YouTube.' },
       { title: 'Social Media Audit Service', desc: 'Comprehensive, data-backed audits of your current social presence to identify gaps and deliver actionable growth roadmaps.' },
       { title: 'Digital PR Services', desc: 'Strategic brand positioning, media relations, and digital press coverage to build your industry authority and trust.' },
+      { title: 'Website UI & UX Design', desc: 'User-centered design that creates intuitive, beautiful digital experiences optimized for conversion and engagement.' },
+      { title: 'WhatsApp Marketing', desc: 'Intelligent automation flows and direct broadcast campaigns for lead nurturing and high-conversion customer retention.' },
     ],
   },
   {
@@ -41,9 +43,10 @@ const tabs = [
     label: 'Web & Growth',
     icon: Rocket,
     services: [
-      { title: 'E-Commerce & Website Development', desc: 'Custom, high-performance website and e-commerce builds engineered to convert organic and paid traffic into sales.' },
+      { title: 'Dynamic Website Development', desc: 'Custom, high-performance website builds engineered to convert organic and paid traffic into sales with interactive features.' },
+      { title: 'E-Commerce Website Development', desc: 'Full-featured online stores with secure payment gateways, inventory management, and conversion-optimized checkout flows.' },
+      { title: 'Link in Bio Site', desc: 'Branded micro-sites designed for social media profiles to consolidate all your important links in one elegant destination.' },
       { title: 'Influencer Marketing', desc: 'Curated influencer and creator partnerships with performance-tracked campaigns and authentic brand alignment.' },
-      { title: 'WhatsApp Marketing', desc: 'Intelligent automation flows and direct broadcast campaigns for lead nurturing and high-conversion customer retention.' },
     ],
   },
 ];
